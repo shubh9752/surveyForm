@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #b7f7ca, #a0f8b9, #88f8a7, #6ef893, #4ff77e);
+    height: 100%;
+    width: 1005;
+
+}
+form{
+    margin: 70px;
+    padding: 12px ;
+    background: #fff;
+    border-radius: 0.2rem;
+}
+
+h2{
+    color: #11d84a;
+}
+
+p{
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    width: 100%;
+    
+}
+
+.left{
+    width: 50%;  
+    padding-right: 5%;
+}
+.right{
+    width: 50%;
+}
+.agebox{
+    display: flex;
+    column-gap: 40px;
+    width: 72%;
+    
+}
+
+.inputBox{
+    width: 70%;
+}
+
+textarea{
+    width: 60%;
+    height: 10%;
+}
+
+.submit-btn{
+    width: 100%;
+    text-align: center;
+    background: #11d84a;
+    color: #fff;
+    height: 30px;
+    border-radius: 2%;
+    border: #11d84a;
+    font-size: 1rem;
+}
+.inputBox::placeholder,
+textarea::placeholder {
+  color: #52fc4c; /* Change to your desired color */
+  opacity: 1; /* Ensures the placeholder text is not transparent */
+}
+
+@media (max-width: 767.98px) {
+    .container{
+      display: list-item;
+    }
+    .left{
+        width: 100%;  
+      
+    }
+    .agebox{
+        display: flex;
+        column-gap: 20px;
+        width: 72%;
+        
+    }
+  }
+  @media (max-width: 575.98px) {
+    .agebox{
+        display: list-item;
+        
+        
+    }
+  }
+
+/* input{
+    width: 70%;
+}
+.input-radio{
+    width: 5%;
+}
+.agebox>.input-radio{
+    width: 1%;
+} */

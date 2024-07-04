@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <h2>SURVEY FORM</h2>
+      <p>
+        Feel Free To Answer the questions below based on your own experience and
+        opinion.if you are not convenient to answering a particular question
+        please skip it by answering 'No'.every answer would be very appreciated.
+        Thank you for your time.
+      </p>
+      <div class="container">
+        <div class="left">
+          <label for="fname">Your Name:</label><br />
+          <input
+            class="inputBox"
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter your name"
+          /><br /><br />
+          <label for="email">Your Email Address:</label><br />
+          <input
+            class="inputBox"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="user@user.com"
+          /><br /><br />
+          <label for="phone">Your Phone Number:</label><br />
+          <input
+          class="inputBox"
+            type="text"
+            id="phone"
+            name="phone"
+            maxlength="10"
+            placeholder="0000000000"
+          /><br /><br />
+          <label for="location">Where Do You Live?</label><br />
+          <select id="location" name="location" style="width: 68%">
+            <option value="">Select</option>
+            <!-- Add options as needed -->
+          </select>
+          <br><br>
+          <fieldset class="agebox">
+            <legend>Age:</legend>
+            <div>
+                <label><input class="input-radio" type="radio" name="age" value="15-20" /> 15-20</label><br><br>
+                <label><input class="input-radio" type="radio" name="age" value="20-30" /> 20-30</label><br><br>
+                <label><input class="input-radio" type="radio" name="age" value="31-40" /> 31-40</label><br><br>
+            </div>
+            <div>
+                <label><input class="input-radio" type="radio" name="age" value="41-50" /> 41-50</label><br><br>
+                <label
+              ><input class="input-radio" type="radio" name="age" value="prefer-not-to-say" />
+              Prefer not to say</label
+            >
+
+            </div>
+          
+            
+          </fieldset>
+          <br><br>
+          <label for="proficiency">How would you rate your proficiency in coding?</label><br>
+          <input class="input-radio" type="radio" id="roficiency"  name="proficiency" value="beginner"> Beginner <br>
+          <input class="input-radio" type="radio" id="roficiency" name="proficiency" value="intermediate"> Intermediate <br>
+          <input class="input-radio" type="radio" id="roficiency" name="proficiency" value="advance"> Advance <br>
+        </div>
+        <br><br>
+
+        <div class="right">
+        
+
+            <label for="contest">Have You Ever Appeared in any coding contest?</label><br>
+        <input class="input-radio" type="radio"id="contest"  name="contest" value="yes"> Yes <br>
+        <input class="input-radio" type="radio"id="contest" name="contest" value="no"> No   <br>
+
+        <br>
+        <label for="passion">Discuss what drives your passion for coding and outline your aspirations in the field.</label><br>
+        <textarea id="passion" name="passion"></textarea>
+        <br><br>
+        <label for="challenges">What are some of the challenges you face while coding?</label><br>
+        <textarea  id="challenges" name="challenges"></textarea>
+        <br><br>
+        <label for="data-structures">Please list the Data Structures you have a strong understanding of.</label><br>
+        <textarea id="data-structures" name="data-structures"></textarea>
+
+        <br><br>
+        <button type="submit" class="submit-btn">Submit Form</button>
+        </div>
+
+        
+      </div>
+    </form>
+  </body>
+</html>
